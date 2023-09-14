@@ -5,9 +5,24 @@ const experienceField = document.getElementById("experience-field");
 const skill = document.getElementById("skills");
 const education = document.getElementById("education");
 const experience = document.getElementById("experience");
+const menuIcon = document.getElementById("header-menu-icon");
+const closeBtn = document.getElementById("close-menu");
+const sideMenu = document.getElementById("side-menu");
 
-// experienceField.classList.add("gg");
-// educationField.classList.add("gg");
+
+menuIcon.onclick=function(){
+  sideMenu.classList.toggle("side-menu-toggle");
+};
+closeBtn.onclick=function(){
+    sideMenu.classList.toggle("side-menu-toggle");
+    
+};
+sideMenu.onclick=function(){
+    sideMenu.classList.remove("side-menu-toggle");
+};
+
+
+
 skillField.classList.add("gg");
 
 fields.addEventListener('click',function(e){
@@ -37,12 +52,7 @@ fields.addEventListener('click',function(e){
         education.style = "visibility: hidden;";
     }
     else{
-        // experienceField.classList.add("gg");
-        // educationField.classList.add("gg");
-        // skillField.classList.add("gg");
-        // skill.style = "visibility: visible;";
-        // experience.style = "visibility: visible;";
-        // education.style = "visibility: visible;"; 
+        
     }
 }
 
@@ -53,5 +63,5 @@ fields.addEventListener('click',function(e){
 
 
 const alerted = function(){
-    alert('message send succesfully')
+    alert('message cant be send because its just a frontend site')
 }
