@@ -18,27 +18,40 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header id="home">
-        <div class="myName"><h1><span>G</span>ULRAIZ</h1></div>
-        <ul class="links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Projects</a</li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
-    <div class="home-main">
-        <div class="intro">
-            <h2 class="skill">Front-End Developer</h2><h2>Hi I am <span>Gulraiz</span> <br> From Lahore </h2>
+    <div class="home" id="home">
+        <div id="sidebarmenu-parent" class="sidebarmenu-parent"></div>
+            <div id="side-menu" class="side-menu  ">
+                <ul class="sidebar-links">
+                    <i id="close-menu" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a</li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="my-pic">
+        <header id="header" class="header">
+            <div class="myName"><h1><span>G</span>ULRAIZ</h1></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a</li>
+                <li><a href="#contact">Contact</a></li>
+                <i id="header-menu-icon" class="fa-solid fa-bars"></i>
+            </ul>
+        </header>
+        <div class="home-main">
+            <div class="intro">
+                <h2 class="skill">Front-End Developer</h2><h2>Hi I am <span>Gulraiz</span> <br> From Lahore </h2>
+            </div>
+            <div class="my-pic">
+                <a href="#home"><i class="fa-solid fa-house go-home-button"></i></a>
+            </div>
+            
         </div>
-         
     </div>
     
     <!-----------------about section start--------->
-
-
 
     <div class="about" id="about">
         
@@ -70,11 +83,15 @@
                         <li>Matric-ComputerScience</li>
                         <li>Intermediate-ICS</li>
                         <li>Bachelors-CS</li>
+                       
                     </ul>
                     <ul id="experience">
-                        <li>Fresh</li>
-                        <li>Fresh</li>
-                        <li>Fresh</li>
+                        <li>Less than 1 year</li>
+                        <li>Less than 1 year</li>
+                        <li>Less than 1 year</li>
+                        <li>Less than 1 year</li>
+                        <li>Less than 1 year</li>
+                        
                     </ul>
                 </div>
             </div>
@@ -84,10 +101,40 @@
       <!-- Projects section ----------------------- -->
 
     <div id="project" class="project">
-        <div class="project-head">
-            <h1>Projects</h1>
-       </div>
+            <div class="project-head">
+                <h1>Projects</h1>
+            </div>
 
+       <div class="project-main">
+
+            <div class="project-title">
+                <div>
+                <h1 class="div-center">My work</h1>
+                </div>
+            </div>
+
+            <div class="projects-images">
+                <div class="img-divs">
+                    <h1>A Responsive todo List Project</h1>
+                    <img src="./project-images/todo-list.jpg" alt="img">
+                    <a target="_blank" href="https://gulraizaijaz.github.io/Todo-List-JavaScript/">click here to view</a>
+                </div>
+                <div class="img-divs">
+                    <h1> A Responsive Calculator App</h1>
+                    <img src="./project-images/calculator-app.jpg" alt="img">
+                    <a target="_blank" href="https://gulraizaijaz.github.io/Simple-Calculator-Using-JS/">click here to view</a>
+                </div>
+                <div class="img-divs">
+                    <h1>A Simple bubble Game</h1>
+                    <img src="./project-images/bubble-game.jpg" alt="img">
+                    <a target="_blank" href="https://gulraizaijaz.github.io/bubbleGameProject/">click here to view</a>
+                </div>
+               
+              
+                
+            </div>
+       
+       </div>
     </div>
 
 
@@ -106,27 +153,26 @@
            </div>
            <div class="contact-main-body">
                 <div class="contact-main-body-left">
-                        <div class="div-center color-black bg-white">
+                        <div class="div-center color-black bg-white contact-main-body-left-heading">
                         <h1 >Get in Touch</h1>
                         </div>
                         <div class="contact-details">
-                            <p class="color-black f1"> <i class="fa-solid fa-envelope "></i> : gulraizmuhammed013@gmail.com</p>
-                            <p class="color-black f1"><i class="fa-solid fa-phone "></i> : +92-332-8645-961</p>
+                            <p class="color-black f1"> <i class="fa-solid fa-envelope "></i> : <br> gulraizmuhammed013@gmail.com</p>
+                            <p class="color-black f1"><i class="fa-solid fa-phone "></i> : <br>  +92-3134251302</p>
                         </div>
                 </div>
                 <div class="contact-main-body-right">
                     <input class="input-name" type="text " placeholder="Name" >
                     <input class="input-email" type="text " placeholder="E-mail" >
                     <input class="input-contact" type="number " placeholder="Contact Number">
-                    <textarea class="input-message" rows="5"  placeholder="Message"></textarea>
+                    <textarea  class="input-message" rows="5"  placeholder="This message will not send to me,Because its not connected to any database"></textarea>
                     <Button onclick="alerted()"><a href="#">Send</a></Button>
                     <div class="contact-main-body-right-icons">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-square-twitter"></i>
-                        
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/malik-gulraiz/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
                     </div>
                 </div>
            </div>
@@ -134,6 +180,7 @@
 
     </div>
 
+  
      
 
 
