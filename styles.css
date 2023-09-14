@@ -753,7 +753,7 @@ starts here */
         
     }
     .about-main .about-left{
-        margin-left: 0px;
+        margin: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -762,7 +762,7 @@ starts here */
         margin-top: 5vh;
         border-radius: 20%;
         min-width: 60vw;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
     .about-main .about-left img{
         width: 100%;
