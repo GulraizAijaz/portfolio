@@ -388,14 +388,14 @@ starts here */
     justify-content:center ;
     align-items: center ;
     width: 100%;
-    min-height: 15vh;
+    min-height: 10vh;
     background-color: #00a9d3;
-    padding: 10px 0px;
+    padding: 5px 0px;
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .contact-main-body{
-    min-height: 85vh;
+    min-height: 90vh;
     width: 100%;
     background-color: #1e1e1e;
     color: #ffffff;
@@ -426,7 +426,8 @@ starts here */
     width: 100%;
 }
 .contact-details{
-    margin-top: 10%;
+    padding-top: 25%;
+    text-align: center;
 }
 
 .contact-main-body-right{
@@ -467,6 +468,12 @@ starts here */
     width: 100%;
     /* height: 30%; */
     
+}
+.send-btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
 }
 .contact-main-body-right button{
     width: 60%;
@@ -517,7 +524,6 @@ starts here */
         padding: 0%;
         font-family: 'poppins','sans-serif';
         text-align: center;
-        
     }
     body::-webkit-scrollbar{
         display: none;
@@ -543,6 +549,7 @@ starts here */
     }
     #home{
         width: 100%;
+        /* transition: 500ms; */
     }
     .side-menu{
         left: -100%;
@@ -555,9 +562,9 @@ starts here */
         transition: 500ms;
     }
     .side-menu-toggle{
-        position: relative;
+        position:relative;
         left: 0%;
-        transition: 500ms;
+        
     }
     .sidebar-links{
         min-width: 100%;
@@ -680,7 +687,7 @@ starts here */
         padding: 2% 4%;
         box-shadow:1px 11px 20px 1px #080808;
         /* margin-left: 5vw; */
-        margin: 5% 0% 5% 0%;
+        margin: 5% 0% 5% 0;
         overflow: hidden;
         align-items: center;
         display: flex;
@@ -704,9 +711,11 @@ starts here */
         min-height: 60vh;
         min-width: 85%;
         border-radius: 50%;
+        /* margin-right: 5vw; */
         background-size:cover;  
         margin-bottom: 5%;
         margin-top: 5%;
+
     }
     .my-pic a{
         text-decoration: none;
@@ -728,11 +737,9 @@ starts here */
     llllllllll
     
     */
-    
     .about{
         width: 100%;
-        min-height: 100vh;
-       
+        min-height: 100vh;  
     }
     .about-head{
         display: flex;
@@ -747,35 +754,30 @@ starts here */
         background-color: #1e1e1e;
         min-height: 90vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: space-between;
         min-width: 100%;
         
     }
     .about-main .about-left{
-        margin: 0px;
+        margin: 5% 0 5% 0;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #af8600;
-        height: 40vh;
-        margin-top: 5vh;
+        min-height: 60vh;
         border-radius: 20%;
-        min-width: 60vw;
+        min-width: 90vw;
         overflow: hidden;
+        display: none;
     }
     .about-main .about-left img{
         width: 100%;
         height: 100%;
-        /* position: relative;
-        top: 5vh; */
-        
-    
+        background-size: cover;
     }
     .about-main .about-right{
-        /* margin: 5%  5% 0% 0%; */
-        /* margin-right: 5vw; */
         margin: 5% 0 5% 0;
         border: 3px solid black;
         border-radius: 50px;
@@ -790,9 +792,7 @@ starts here */
         min-height: 10vh;
         display: flex;
         justify-content: center;
-        align-items: center;
-        
-        
+        align-items: center;    
     }
     .right-fields{
         display: flex;
@@ -860,6 +860,7 @@ starts here */
         visibility: hidden;
     
     }
+    
     
     
     /* projects section starts hereee 
@@ -964,20 +965,20 @@ starts here */
         justify-content:center ;
         align-items: center ;
         width: 100%;
-        min-height: 15vh;
+        min-height: 10vh;
         background-color: #00a9d3;
         padding: 10px 0px;
         color: #ffffff;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .contact-main-body{
-        min-height: 85vh;
+        min-height: 90vh;
         width: 100%;
         background-color: #1e1e1e;
         color: #ffffff;
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-between;
         padding-top: 10vh;
         
@@ -986,13 +987,14 @@ starts here */
     .contact-main-body i{
         padding-top: 2%;
         color: #003e42;
+        font-size: 1.3em;
        
     }
     .contact-main-body-left{
         width: 90%;
         background-color: #b9b9b9;
         /* margin-left:  5vw; */
-        margin: 0 0 5%;
+        margin: 0 0 5% 0;
         padding: 5vh 2vw 0vh 2vw;
         border-radius: 20px;
         min-height: 50vh;
@@ -1002,6 +1004,7 @@ starts here */
         margin-top: 10%;
         overflow-wrap: break-word;
         align-items: center;
+        padding: unset;
         
     }
     
@@ -1010,7 +1013,7 @@ starts here */
         background-color: #b9b9b9;
         margin: 0;
         border-radius: 20px;
-        min-height: 70vh;
+        min-height: 60vh;
         padding: 2% ;
         overflow: hidden;
         margin-bottom: 50px;
